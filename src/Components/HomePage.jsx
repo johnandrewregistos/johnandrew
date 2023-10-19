@@ -11,7 +11,7 @@ function HomePage() {
         muted
         className="w-full h-full object-fill md:object-cover "
       >
-        <source src="/videos/showreel.mp4" type="video/mp4" />
+        <source src="https://www.youtube.com/watch?v=It8Rg1TSEzQ" />
       </video>
     </div>
   );
