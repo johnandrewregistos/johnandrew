@@ -1,6 +1,6 @@
 import React from "react";
 import { BsArrow90DegRight } from "react-icons/bs";
-// import Header from "./Header";
+import Instagram from "../assets/instagram.png";
 
 function Contact() {
   return (
@@ -37,11 +37,7 @@ function Contact() {
                 rel="noopener noreferrer"
                 className="w-full grid place-items-center"
               >
-                <img
-                  src="/src/assets/instagram.png"
-                  alt="John Andrew"
-                  className="w-2/6"
-                />
+                <img src={Instagram} alt="John Andrew" className="w-2/6" />
               </a>
             </div>
           </div>

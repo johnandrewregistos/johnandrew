@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { BiPhoneCall } from "react-icons/bi";
 import { Link } from "react-scroll";
+import Favicon from "../assets/favicon.png";
 
 function Header() {
   const [isMenuOpen, setMenuOpen] = useState(true);
@@ -24,12 +25,12 @@ function Header() {
   return (
     <header className="text-black font-bold body-font">
       <div className="container mx-auto flex p-3 md:p-5 justify-between flex-row items-center">
-        <a className="flex items-center mb-4 md:mb-0">
-          <img
-            src="/src/assets/favicon.png"
-            alt="John Andrew"
-            className="w-10 h-10"
-          />
+        <a
+          href="https://www.instagram.com/john_andrew.edits/"
+          target="_blank"
+          className="flex items-center mb-4 md:mb-0"
+        >
+          <img src={Favicon} alt="John Andrew" className="w-10 h-10" />
           <span className="ml-3 text-yellow-400 md:text-xl">John Andrew</span>
         </a>
 

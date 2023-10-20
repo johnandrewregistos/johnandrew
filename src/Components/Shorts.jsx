@@ -1,5 +1,9 @@
 import React, { useState } from "react";
 import { Link } from "react-scroll";
+import Short1 from "../assets/videos/Ali Abdaal Style.mp4";
+import Short2 from "../assets/videos/Devin Jatho Orig.mp4";
+import Short3 from "../assets/videos/Natt Style.mp4";
+import Short4 from "../assets/videos/Devin Jatho.mp4";
 
 function Highlight() {
   //   console.log(data);
@@ -62,9 +66,14 @@ function Highlight() {
           <div className="w-full h-4/6 grid grid-cols-2 md:grid-cols-4 place-items-center gap-3">
             {/* One */}
             <div className="w-7/12 sm:w-6/12 md:w-9/12 h-3/4 md:h-full grid place-items-center">
-              <video controls loop muted className="w-full rounded-md">
-                <source src="/videos/Ali Abdaal Style.mp4" type="video/mp4" />
-              </video>
+              <video
+                src={Short1}
+                autoPlay
+                controls
+                loop
+                muted
+                className="w-full rounded-md"
+              ></video>
               <div className="flex flex-col justify-center items-center">
                 <p className="text-md sm:text-xl md:text-2xl text-yellow-400 font-semibold">
                   Ali Abdaal
@@ -73,9 +82,14 @@ function Highlight() {
             </div>
             {/* two */}
             <div className="w-7/12 sm:w-6/12 md:w-9/12 h-3/4 md:h-full grid place-items-center">
-              <video controls loop muted className="w-full rounded-md">
-                <source src="/videos/Devin Jatho Orig.mp4" type="video/mp4" />
-              </video>
+              <video
+                src={Short2}
+                autoPlay
+                controls
+                loop
+                muted
+                className="w-full rounded-md"
+              ></video>
               <div className="flex flex-col justify-center items-center">
                 <p className="text-md sm:text-xl md:text-2xl text-yellow-400 font-semibold">
                   Devin Jatho
@@ -84,9 +98,14 @@ function Highlight() {
             </div>
             {/* three */}
             <div className="w-7/12 sm:w-6/12 md:w-9/12 h-3/4 md:h-full grid place-items-center">
-              <video controls loop muted className="w-full rounded-md">
-                <source src="/videos/Natt Style.mp4" type="video/mp4" />
-              </video>
+              <video
+                src={Short3}
+                autoPlay
+                controls
+                loop
+                muted
+                className="w-full rounded-md"
+              ></video>
               <div className="flex flex-col justify-center items-center">
                 <p className="text-md sm:text-xl md:text-2xl text-yellow-400 font-semibold">
                   Natt Style
@@ -95,9 +114,14 @@ function Highlight() {
             </div>
             {/* four */}
             <div className="w-7/12 sm:w-6/12 md:w-9/12 h-3/4 md:h-full grid place-items-center">
-              <video controls loop muted className="w-full rounded-md">
-                <source src="/videos/Devin Jatho.mp4" type="video/mp4" />
-              </video>
+              <video
+                src={Short4}
+                autoPlay
+                controls
+                loop
+                muted
+                className="w-full rounded-md"
+              ></video>
               <div className="flex flex-col justify-center items-center">
                 <p className="text-md sm:text-xl md:text-2xl text-yellow-400 font-semibold">
                   Personal Style

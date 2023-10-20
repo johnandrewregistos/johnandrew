@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "./Header";
-import videoBg from "../assets/SHOWREEL.mp4";
+import videoBg from "../assets/videos/SHOWREEL.mp4";
 
 function HomePage() {
   return (
