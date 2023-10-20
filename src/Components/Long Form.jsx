@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-scroll";
 import LongVideo from "../assets/videos/Long.mp4";
+import thum from "../assets/images/thumbnail.jpeg";
 
 import { DefaultPlayer as Video } from "react-html5video";
 import "react-html5video/dist/styles.css";
@@ -67,6 +68,7 @@ function Highlight() {
                 src={LongVideo}
                 loop
                 controls={["PlayPause", "Seek", "Time", "Volume", "Fullscreen"]}
+                poster={thum}
               ></Video>
             </div>
           </div>
