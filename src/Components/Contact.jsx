@@ -37,7 +37,11 @@ function Contact() {
                 rel="noopener noreferrer"
                 className="w-full grid place-items-center"
               >
-                <img src={Instagram} alt="John Andrew" className="w-2/6" />
+                <img
+                  src={Instagram}
+                  alt="John Andrew"
+                  className="w-4/6 md:w-2/6"
+                />
               </a>
             </div>
           </div>

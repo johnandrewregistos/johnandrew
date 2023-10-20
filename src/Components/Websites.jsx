@@ -5,6 +5,9 @@ import Website2 from "../assets/videos/2.mp4";
 import Website3 from "../assets/videos/3.mp4";
 import Website4 from "../assets/videos/4.mp4";
 
+import { DefaultPlayer as Video } from "react-html5video";
+import "react-html5video/dist/styles.css";
+
 function Highlight() {
   //   console.log(data);
   return (
@@ -66,14 +69,14 @@ function Highlight() {
           <div className="w-full h-5/6 grid grid-cols-2 place-items-center px-10 py-6 gap-8">
             {/* One */}
             <div className="w-[8rem] sm:w-[16rem] md:w-[20rem] h-3/4 flex flex-col justify-center items-center gap-2">
-              <video
+              <Video
                 src={Website1}
                 autoPlay
-                controls
+                // controls={["PlayPause", "Seek", "Time", "Volume", "Fullscreen"]}
                 loop
                 muted
                 className="w-full rounded-md"
-              ></video>
+              ></Video>
               <div className="w-full flex flex-col sm:flex-row items-center justify-evenly">
                 <p className="text-amber-400 font-semibold text-sm sm:text-lg md:text-2xl">
                   Real Estate
@@ -90,14 +93,14 @@ function Highlight() {
             </div>
             {/* Two */}
             <div className="w-[8rem] sm:w-[16rem] md:w-[20rem] h-3/4 flex flex-col justify-center items-center gap-2">
-              <video
+              <Video
                 src={Website2}
                 autoPlay
-                controls
+                // controls={["PlayPause", "Seek", "Time", "Volume", "Fullscreen"]}
                 loop
                 muted
                 className="w-full rounded-md"
-              ></video>
+              ></Video>
               <div className="w-full flex flex-col sm:flex-row items-center justify-evenly">
                 <p className="text-amber-400 font-semibold text-sm sm:text-lg md:text-2xl">
                   Ecommerce Store
@@ -114,14 +117,14 @@ function Highlight() {
             </div>
             {/* Three */}
             <div className="w-[8rem] sm:w-[16rem] md:w-[20rem] h-3/4 flex flex-col justify-center items-center gap-2">
-              <video
+              <Video
                 src={Website3}
                 autoPlay
-                controls
+                // controls={["PlayPause", "Seek", "Time", "Volume", "Fullscreen"]}
                 loop
                 muted
                 className="w-full rounded-md"
-              ></video>
+              ></Video>
               <div className="w-full flex flex-col sm:flex-row items-center justify-evenly">
                 <p className="text-amber-400 font-semibold text-sm sm:text-lg md:text-2xl">
                   Portfolio
@@ -138,14 +141,14 @@ function Highlight() {
             </div>
             {/* Four */}
             <div className="w-[8rem] sm:w-[16rem] md:w-[20rem] h-3/4 flex flex-col justify-center items-center gap-2">
-              <video
+              <Video
                 src={Website4}
                 autoPlay
-                controls
+                // controls={["PlayPause", "Seek", "Time", "Volume", "Fullscreen"]}
                 loop
                 muted
                 className="w-full rounded-md"
-              ></video>
+              ></Video>
               <div className="w-full flex flex-col sm:flex-row items-center justify-evenly">
                 <p className="text-amber-400 font-semibold text-sm sm:text-lg md:text-2xl">
                   Butad Tailoring

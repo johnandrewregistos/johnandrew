@@ -2,6 +2,9 @@ import React from "react";
 import { Link } from "react-scroll";
 import LongVideo from "../assets/videos/Long.mp4";
 
+import { DefaultPlayer as Video } from "react-html5video";
+import "react-html5video/dist/styles.css";
+
 function Highlight() {
   //   console.log(data);
   return (
@@ -60,14 +63,11 @@ function Highlight() {
           <div className="w-full h-5/6 flex flex-wrap justify-center items-center px-10 py-2 sm:py-8 gap-10">
             {/* One */}
             <div className="w-5/6 grid place-items-center">
-              <video
+              <Video
                 src={LongVideo}
-                autoPlay
-                controls
                 loop
-                muted
-                className="w-full rounded-md"
-              ></video>
+                controls={["PlayPause", "Seek", "Time", "Volume", "Fullscreen"]}
+              ></Video>
             </div>
           </div>
           {/* End of Display Works */}
